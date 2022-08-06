@@ -43,9 +43,12 @@ ON UPDATE <type>
 select * 
 from A left join B on A.ID = B.A_ID
 ```
-A1  | B1   
-A2  | B2   
-A3  | NULL  
+
+| | | 
+|---|---|
+|A1|B1|   
+|A2|B2|   
+|A3|NULL|  
 
 ### RIGHT (OUTER) JOIN
 
@@ -59,6 +62,8 @@ A left join B = B right join A
 select * 
 from B right join A on A.ID = B.A_ID
 ```
+| | | 
+|---|---|
 A1  | B1   
 A2  | B2   
 A3  | NULL  
@@ -78,7 +83,8 @@ select *
 from A left join B on A.ID = B.A_ID
 where B.ID is not null
 ```
-
+| | | 
+|---|---|
 A1  | B1 
 A2  | B2 
 
@@ -90,7 +96,8 @@ A2  | B2
 select * 
 from A cross join B
 ```
-
+| | | 
+|---|---|
 A1  | B1 
 A1  | B2 
 A2  | B1 
@@ -108,7 +115,8 @@ A2  | B2
 select * 
 from A full join B on A.ID = B.A_ID
 ```
-
+| | | 
+|---|---|
 A1  | B1   
 A2  | B2   
 A3  | NULL 
